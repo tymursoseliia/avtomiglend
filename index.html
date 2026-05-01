@@ -61,20 +61,47 @@
             <source src="" type="video/mp4">
         </video>
         <div class="hero-overlay"></div>
-        <div class="container">
-            <h1>Пригон авто из Европы под ключ в РФ за 14–20 дней</h1>
-            <p>Подберем, проверим и доставим автомобиль вашей мечты с выгодой до 30% по сравнению с рынком РФ. Полная юридическая чистота и гарантия сохранности.</p>
-            <ul class="hero-advantages">
-                <li>✅ Работаем по договору</li>
-                <li>✅ Проверка VIN и истории</li>
-                <li>✅ Фото/видео отчёт</li>
-                <li>✅ Без скрытых платежей</li>
-                <li>✅ Доставка в любой регион РФ</li>
-                <li>✅ Точный подбор под бюджет</li>
-            </ul>
-            <div class="hero-buttons">
-                <a href="#calculator" class="btn-primary">Рассчитать стоимость</a>
-                <button class="btn-secondary" onclick="openModal('callback-modal'); return false;">Консультация эксперта</button>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Пригон авто из Европы под ключ в РФ за 14–20 дней</h1>
+                <p>Подберем, проверим и доставим автомобиль вашей мечты с выгодой до 30% по сравнению с рынком РФ. Полная юридическая чистота и гарантия сохранности.</p>
+                <ul class="hero-advantages">
+                    <li>✅ Работаем по договору</li>
+                    <li>✅ Проверка VIN и истории</li>
+                    <li>✅ Фото/видео отчёт</li>
+                    <li>✅ Без скрытых платежей</li>
+                    <li>✅ Доставка в любой регион РФ</li>
+                    <li>✅ Точный подбор под бюджет</li>
+                </ul>
+                <div class="hero-buttons">
+                    <a href="#calculator" class="btn-primary">Рассчитать стоимость</a>
+                    <button class="btn-secondary" onclick="openModal('callback-modal'); return false;">Консультация эксперта</button>
+                </div>
+            </div>
+            <div class="hero-form-wrapper">
+                <div class="hero-lead-form">
+                    <h3>Оставить заявку на подбор</h3>
+                    <p class="form-subtitle">Заполните форму, и мы подберем 3 варианта под ваш бюджет</p>
+                    <form class="hero-form" onsubmit="submitForm(event, this)">
+                        <div class="form-group"><input type="text" name="name" class="form-control" placeholder="ФИО" required></div>
+                        <div class="form-group"><input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required></div>
+                        <div class="form-group">
+                            <select name="budget" class="form-control" required style="cursor: pointer; appearance: auto; color: #fff; background: rgba(255, 255, 255, 0.05);">
+                                <option value="" disabled selected style="color: #000;">Выберите бюджет (от и до)</option>
+                                <option value="До 2 млн руб" style="color: #000;">До 2 млн руб</option>
+                                <option value="2 - 3 млн руб" style="color: #000;">2 - 3 млн руб</option>
+                                <option value="3 - 5 млн руб" style="color: #000;">3 - 5 млн руб</option>
+                                <option value="5 - 8 млн руб" style="color: #000;">5 - 8 млн руб</option>
+                                <option value="От 8 млн руб" style="color: #000;">От 8 млн руб</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="type" value="Заявка с главного экрана">
+                        <button type="submit" class="btn-primary" style="width: 100%;">Оставить заявку</button>
+                        <div class="policy-text" style="color: rgba(255,255,255,0.7);">
+                            Нажимая кнопку, вы соглашаетесь с <a href="policy.html" target="_blank" style="color: #fff;">политикой конфиденциальности</a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
